@@ -395,7 +395,9 @@ button {
 }
 
 @media (min-width: 360px) and (max-width: 736px) {
-
+    body{
+        overflow-x: hidden;
+    }
     div#TollFree img {
         width: 10px;
     }
