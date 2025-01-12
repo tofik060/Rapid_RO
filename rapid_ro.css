@@ -1,5 +1,4 @@
 body {
-    background-image: url(BodyBG.jpg);
     font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -31,7 +30,6 @@ body {
 }
 
 .jumbotron {
-
     font-size: 30px;
     padding: 1px 0 1px 0;
     color: #337ab7;
@@ -67,12 +65,7 @@ body {
     opacity: 0.3;
 }
 
-.rdiv1 {
-    padding: 10px;
-    width: 50%;
-}
-
-.rdiv2 {
+.rdiv {
     padding: 10px;
     width: 50%;
 }
@@ -102,7 +95,7 @@ body {
     padding: 8px
 }
 
-.row01{
+.row01 {
     width: 100%;
     margin: 0;
 }
@@ -381,13 +374,13 @@ button {
 .btncon1 {
     display: block;
     float: left;
-    margin-left: 41%;
+    margin-left: 42%;
 }
 
 .btncon {
     display: block;
     float: right;
-    margin-right: 42%;
+    margin-right: 42.8%;
 }
 
 .divf {
@@ -395,9 +388,11 @@ button {
 }
 
 @media (min-width: 360px) and (max-width: 736px) {
-    body{
+
+    body {
         overflow-x: hidden;
     }
+
     div#TollFree img {
         width: 10px;
     }
@@ -467,13 +462,7 @@ button {
         text-align: justify;
     }
 
-    .rdiv1 {
-        margin: 0 5% 0 7%;
-        width: 100%;
-    }
-
-    .rdiv2 {
-        margin: 0 5% 0 7%;
+    .rdiv {
         width: 100%;
     }
 
@@ -492,6 +481,7 @@ button {
 
     .row1 {
         height: 55%;
+        width: 106%;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -608,7 +598,7 @@ button {
 
     .condiv {
         margin-top: 30px;
-        padding-left: 40px;
+        padding-left: 10px;
         width: 100%;
     }
 
@@ -706,6 +696,15 @@ button {
     .nf0 {
         font-size: 11px;
     }
+
+    .free-form-control {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .enquiryRow {
+        margin-bottom: 0px !important;
+    }
 }
 
 .carousel-control-prev:hover,
@@ -718,49 +717,46 @@ button {
 .col-md-3 {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .col-md-3:hover {
     opacity: 0.8;
-    transform: scale(1.05); /* Optional zoom effect */
+    transform: scale(1.05);
+    /* Optional zoom effect */
     cursor: pointer;
 }
 
 .col-md-6 {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .col-md-6:hover {
     opacity: 0.8;
-    transform: scale(1.02); /* Optional zoom effect */
+    transform: scale(1.02);
+    /* Optional zoom effect */
     cursor: pointer;
 }
 
 .image-zoom-container {
-    overflow: hidden; /* Ensure the image doesn't spill outside the container */
+    overflow: hidden;
+    /* Ensure the image doesn't spill outside the container */
     display: inline-block;
     position: relative;
 }
 
 .zoomable {
-    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    transition: transform 0.3s ease;
+    /* Smooth transition for zoom effect */
 }
 
 .zoomable:hover {
-    transform: scale(1.2); /* Scale image to 120% on hover */
+    transform: scale(1.2);
+    /* Scale image to 120% on hover */
 }
 
-@media (min-width: 360px) and (max-width: 736px) {
-    .free-form-control{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .enquiryRow{
-        margin-bottom: 0px !important;
-    }
-}
-
-.enquiryCard{
+.enquiryCard {
     padding: 30px 0 30px 0;
 }
 
-.enquiryRow{
+.enquiryRow {
     margin-bottom: 10px;
 }
